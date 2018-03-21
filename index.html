@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>jQuery Weather </title> 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/weather.js"></script>
+<link rel="stylesheet" href="css/weather.css" />
+
+</head>
+<body>
+ 
+<h1 style=" ">7 day weather forecast : TORONTO/ SAN FRANCISCO/ SEOUL </h1>
+<div class="weather">Toronto,ON</div>
+<div class="weather">San Francisco,USA</div>
+<div class="weather">Seoul,South Korea</div>  
+
+<script type="text/javascript">
+        
+       $(document).ready(function () {
+           $(".weather").weatherFeed({relativeTimeZone:true});
+        });
+    </script>
+ 
+
+</body>
+</html>
